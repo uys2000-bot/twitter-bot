@@ -1,0 +1,6 @@
+dist
+img
+
+node_modules
+
+src/util/firebase.ts
