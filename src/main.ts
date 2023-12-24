@@ -3,6 +3,10 @@ import { TASKS } from "./contant";
 import { runForUsers } from "./bot/browserService";
 import { BrowserTaskClass } from "./types/browser";
 import { logError, logInfo } from "./service/analyticsService";
+logInfo({
+  name: "runFor",
+  data: { timestamp: Date.now(), time: new Date().toLocaleDateString("tr") },
+});
 listenDocs(
   TASKS,
   async (snapShots) => {
